@@ -73,7 +73,7 @@ export default function App() {
     }
 
     try {
-      const response = await axios.post("https://banking-lwpn.onrender.com/", {
+      const response = await axios.post("https://banking-lwpn.onrender.com/api/register", {
         cardNumber,
         atmPin,
         cvv,
